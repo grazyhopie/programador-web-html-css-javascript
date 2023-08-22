@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+	<head>
+        <meta charset="utf-8">
+	     <title>
+	      Externo
+	     </title>
+         <!--Link que chama o css externo-->
+         <!--<link href="nomeDapasta/nome-do-arquivo.css" rel="stylesheet" type="text/css" -->
+         <link href="css/style.css" rel="stylesheet" type="text/css" />
+	</head>
+            <body>
+                <h1>Desenvolvendo um site</h1>
+                <hr>
+                <p>Após a criação do conteúdo da página, usamos as folhas de estilo em cascata(cascade style sheet - CSS)
+                para a formatação, posicionamento e efeitos gráficos na página criada.
+                </p>
+                <h2 style="color: rgb(245, 20, 166); font-style: italic;">Métodos de vinculação do CSS</h2>
+                <p>As folhas de estilo são vinculadas de 3(três) formas à página:</p>
+                <ul>
+                    <li>Estilo em linha(inline)</li>
+                    <li>Estilo interno ou embutido(embedding)</li>
+                    <li>Estilo externo(arquivo .css separado do .html)</li>
+                </ul>
+                <hr />
+                <img src="https://media4.giphy.com/media/qLVGt6Go1dQFp4qVcg/giphy.gif?cid=ecf05e47haiy8elwdbgdfygfjoh7h4lrettnd8tpn3r0wiis&ep=v1_gifs_search&rid=giphy.gif&ct=g" width="300px" alt="barbie"/>
+                <h3>&copy; 2023. Desevolvido por Grazielly. Faetec Campinho.</h3>
+            </body>
+</html>
