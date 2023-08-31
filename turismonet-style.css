@@ -1,0 +1,27 @@
+/*CSS EXTERNO*/
+:root{
+    --bluePrincipal: #02a9f6;
+    --verdeLimao: #cdff42;
+}
+body{
+    background-color: rgb(148, 228, 248);
+}
+footer{
+    padding: 50px;
+    background-color: var(--verdeLimao);
+    color: black;
+}
+nav .logotipo-turismonet h1{
+    color: var(--bluePrincipal);
+    letter-spacing: 2px;
+    font-family: 'Lilita One', cursive;
+    font-family: 'Permanent Marker', cursive;
+}
+nav .logotipo-turismonet{
+    background-color: var(--verdeLimao);
+    padding: 10px 10px 30px 20px;
+}
+.logotipo-turismonet i{
+    padding: 5px 20px 10px 10px;
+    font-size: 30px;
+}
