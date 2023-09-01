@@ -1,8 +1,8 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html>
 	<head>
         <meta charset="utf-8">
-	     <title>Site da Turismonet</title>
+	     <title>Turismonet - Conteúdo</title>
          <!--fontawesome icons-->
          <script src="https://kit.fontawesome.com/99f7cc13db.js" crossorigin="anonymous"></script>
          <!--Google fonts-->
@@ -11,40 +11,42 @@
          <link href="https://fonts.googleapis.com/css2?family=Lilita+One&family=Permanent+Marker&display=swap" rel="stylesheet">
          <!--Icone na guia do navegador-->
          <link rel="icon" type="image/jpg" href="https://icon-library.com/images/airplane-png-icon/airplane-png-icon-28.jpg">
+         <!--LINK PARA CSS EXTERNO-->
+         <link href="turismonet/style.css" rel="stylesheet" type="text/css" />
          <style>
-            :root{
-                --bluePrincipal: #02a9f6;
-                --verdeLimao: #cdff42;
-            }
-            body{
-                background-color: rgb(148, 228, 248);
-            }
-            nav .logotipo-turismonet h1{
-                color: var(--bluePrincipal);
-                letter-spacing: 2px;
-                font-family: 'Lilita One', cursive;
-                font-family: 'Permanent Marker', cursive;
-            }
-            nav .logotipo-turismonet{
-                background-color: var(--verdeLimao);
-                padding: 10px 10px 30px 20px;
-            }
-            .logotipo-turismonet i{
-                padding: 5px 20px 10px 10px;
-                font-size: 30px;
-            }
-            .main-content{
-                padding: 1px 300px;
-            }
-            .main-content h1{
-                font-size: 60px;
-                padding: 1px 150px;
-            }
-            footer{
-                padding: 50px;
-                background-color: var(--verdeLimao);
-                color: black;
-            }
+        /*CSS EXTERNO*/
+        :root{
+            --bluePrincipal: #02a9f6;
+            --verdeLimao: #cdff42;
+        }
+        body{
+            background-color: rgb(148, 228, 248);
+        }
+        footer{
+            padding: 50px;
+            background-color: var(--verdeLimao);
+            color: black;
+            text-align: right;
+        }
+        nav .logotipo-turismonet h1{
+            color: var(--bluePrincipal);
+            letter-spacing: 2px;
+            font-family: 'Lilita One', cursive;
+            font-family: 'Permanent Marker', cursive;
+        }
+        nav .logotipo-turismonet{
+            background-color: var(--verdeLimao);
+            padding: 10px 10px 30px 20px;
+        }
+        .logotipo-turismonet i{
+            padding: 5px 20px 10px 10px;
+            font-size: 30px;
+        }
+        /*CSS interno*/
+        .main{
+            padding: 1px 300px;
+            text-align: center;
+        }
          </style>
 	</head>
             <body>
@@ -57,15 +59,19 @@
                         </div>
                     </nav>
                 </header>
-                <div class="main-content">
-                    <h1>Turismonet</h1>
-                <figure>
-                    <a href="conteudo.html">
-                        <img src="https://images.unsplash.com/photo-1583202075378-66202b71e755?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" height="40%" width="90%" alt="aviao-imagem" title="conteudo">
-                        <img src="https://images.unsplash.com/photo-1563359250-602107d96e47?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1475&q=80" height="40%" width="90%" alt="rodoviaria-imagem" title="conteudo">
-                    </a>
-                </figure>
-                </div>
+                    <div class="main">
+                        <h1>Turismonet</h1>
+                        <hr style="width:100%";>
+                        <h2>Aqui na Turismonet você poderá consultar e planejar suas viagens no conforto do seu seu lar ou na empresa.
+                        Para mais informações clique nos links abaixo:</h2>
+                        <a href="rodoviarios.html">Roteiros Rodoviários</a>
+                        <br />
+                        <a href="aereos.html">Roteiros Aéreos</a>
+                        <br />
+                        <a href="mailto:mensagem@turismonet.com.br">Escreva-nos</a>
+                        <br />
+                        <a href="index.html">Voltar</a>
+                    </div>              
                 <footer>
                     <h3> &copy; 2023 Turismonet. Todos os direitos reservados.</h3>
                 </footer>
