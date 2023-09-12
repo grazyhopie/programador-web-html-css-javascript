@@ -1,0 +1,66 @@
+@charset "UTF-8";
+
+*{ /*cores ocuparem 100% do espaçamento da página*/
+    padding: 0;
+    margin: 0;
+}
+:root{
+    --bluePrincipal: #02a9f6;
+    --verdeLimao: #cdff42;
+}
+body{
+    background-color: rgb(148, 228, 248);
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
+}
+footer{
+        height: 90px;
+        padding-top: 50px;
+        background-color: var(--verdeLimao);
+        color: black;
+        text-align: center;
+}
+.logotipo-turismonet h1{
+        color: var(--bluePrincipal);
+        letter-spacing: 2px;
+        font-family: 'Lilita One', cursive;
+        font-family: 'Permanent Marker', cursive;
+        text-align: center;
+}
+.logotipo-turismonet{
+        background-color: var(--verdeLimao);
+        padding: 10px 10px 55px 20px;
+}
+.logotipo-turismonet i{
+        padding: 5px 20px 10px 10px;
+        font-size: 30px;
+}
+/*tabela de preços*/
+table{
+    height: 110px;
+    background: linear-gradient(90deg, #afdef1 0%, #47b6ee 90%); /*cor em degradê*/
+    box-shadow: black 0.1em 0.1em 0.2em;
+    border-collapse: collapse;
+}
+td{
+padding: 15px;
+}
+th{
+background-color: var(--verdeLimao);
+padding: 20px;
+box-shadow: black 0.1em 0.1em 0.2em;
+}
+table, th, td{
+border: 1px solid black;
+text-align: center;
+}
+/*link para o topo da pagina*/
+.ancora-topo{
+text-align: right;
+margin-block: 20pt;
+}
+/*link para o fim da página*/
+.ancora-fim{
+text-align: right;
+margin-block: 20pt;
+}
