@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 	<head>
-        <title>Turismonet - Conteúdo</title>
+        <title>Roteiros Rodoviários</title>
         <!--Configura o conjunto de caracteres(acentuação)-->
         <meta charset="utf-8">
          <!--Descrição da pagina-->
@@ -26,47 +26,89 @@
          <link rel="stylesheet" href="css/style.css" type="text/css" />
          <style>
         /*CSS interno*/
-        h1{
-            padding-top: 30px;
-            left: 300px;
-        }
-        .main-content{
+        .main{
+            padding: 1px 300px;
             text-align: center;
-           margin-block: 50px; /* margem em cima e em baixo ao mesmo tempo*/
         }
-        li{
-            padding-bottom: 20px;
+        .main h1{
+            padding-block: 40px;
+        }
+        .link-voltar-page03{
             font-size: 20px;
-            padding-top: 5px;
+            margin-block: 50px;
+            text-align: center;
         }
-        img{
-            position: absolute; /*define a posição exata da imagem na webpage*/
-            display: block;
-            top: 10px;
-            left: 40px;
+        figure{
+           padding-block: 30px;
+        }
+        figcaption{
+            text-align: center;
         }
          </style>
 	</head>
             <body>
-                <img src="https://images.unsplash.com/photo-1583202075378-66202b71e755?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" height="20%" alt="aviao-imagem" title="conteudo">
-                <div class="logotipo-turismonet">
-                    <h1>
-                        TURISMONET<i class="fa fa-plane"></i>
-                    </h1>
-                </div>
-                <div class="main-content">
-                            <h2>Aqui na Turismonet você poderá consultar e planejar suas viagens no conforto do seu seu lar ou na empresa.
-                            Para mais informações clique nos links abaixo:</h2>
-                            <ul style="list-style: none;">
-                                <li><a href="rodoviarios.html">Roteiros Rodoviários</a></li>
-                                <li><a href="aereos.html">Roteiros Aéreos</a></li>
-                                <li><a href="mailto:mensagem@turismonet.com.br">Escreva-nos</a></li>
-                                <li><a href="index.html">Voltar</a></li>
-                            </ul>
-                </div>
-                <!--Rodapé-->         
+                <!--ancora inicio-->
+                <a name="inicio"></a>
+                        <div class="logotipo-turismonet">
+                            <h1>
+                                TURISMONET<i class="fa fa-plane"></i>
+                            </h1>
+                        </div>
+                    <div class="main">
+                        <div class="ancora-fim">
+                            <!--link fim da página-->
+                            <a href="#fim">Ir para o fim  &#x21E9;</a>
+                        </div>
+                        <h1>Roteiros Rodoviários</h1>
+                        <!--imagens ilustrativas-->
+                            <figure>
+                                <img src="https://blog.eumaisviagens.com.br/wp-content/uploads/2022/07/blog.eumaisviagens.com.br-shutterstock-1755887945-1-1024x575.jpg" height="20%" width="70%" alt="saquarema" title="praia">
+                                <figcaption>Saquarema - RJ</figcaption>
+                            </figure>
+                            <figure>
+                                <img src="https://a.cdn-hotels.com/gdcs/production149/d708/3200849d-b05f-4650-839a-87c743802f46.jpg?impolicy=fcrop&w=800&h=533&q=medium" height="20%" width="70%" alt="arraial" title="praia">
+                                <figcaption>Arraial do cabo - RJ</figcaption>                          
+                            </figure>
+
+                        <!--Tabela de preços-->
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Rota</th>
+                                    <th>Valor da Passagem(Ida e Volta)</th>
+                                    <th>Duração da Viagem</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Cidade Nova, RJ x Saquarema, RJ</td>
+                                    <td>R$:100,00</td>
+                                    <td>3 horas</td>
+                                </tr>
+                                <tr>
+                                    <td>Cidade Nova, RJ x Arraial do Cabo, RJ</td>
+                                    <td>R$:200,00</td>
+                                    <td>4 horas</td>
+                                </tr>
+                                <tr>
+                                    <td>Cidade Nova, RJ x Araruama, RJ</td>
+                                    <td>R$:100,00</td>
+                                    <td>3 horas</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <div class="link-voltar-page03">
+                            <a href="conteudo.html">Voltar</a>
+                        </div>
+                        <div class="ancora-topo">
+                            <!--link inicio-->
+                            <a href="#inicio">Ir para o topo &#x21E7;</a>
+                        </div>
+                    </div>              
                 <footer>
-                    <h3> &copy; 2023 Turismonet. Todos os direitos reservados de Grazielly.</h3>
+                    <h3> &copy; 2023 Turismonet. Todos os direitos reservados.</h3>
+                    <!--ancora para o final da página-->
+                    <a name="fim"></a>
                 </footer>
             </body>
-</html>
+</html> 
