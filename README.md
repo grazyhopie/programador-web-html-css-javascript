@@ -1,6 +1,6 @@
 # Programador Web
 ```
-Conteúdos relacionados a HTML, CSS e Javascript.
+ Conteúdos relacionados a HTML, CSS e Javascript.
  → Aula 1: estrutura básica, apostila com conteúdo.
  → Aula 2: Tag ul, ol, li, Lista ordenada, lista não ordenada, pagina mirrorFashion.
  → Aula 3: Tag img, colocando imagem interna e externa.
