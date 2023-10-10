@@ -8,4 +8,5 @@
  → Aula 5: video e audio interno ou externo.
  → Aula 6: Tipos de estilo, interno, exteno e inline.
  → Aula 7: Como declarar ID e classes, função var, sombra, imagem no background.
+ → Aula 19: Como mostrar o calculo do subtotal em um formulário com Javascript.
 ```
