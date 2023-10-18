@@ -1,0 +1,71 @@
+/*Rodapé*/
+:root{
+    --violetMain: rgb(202, 34, 245);
+}
+
+footer{
+    background-color: var(--violetMain);
+    padding-left: 50px;
+    padding-top: 25px;
+}           
+            .icone-logotipo i{
+                font-size: 40px;
+                color: white;
+            }
+
+            footer h2  { /* titulos do footer: formas de pagamento, loja, suporte*/
+                color: white;
+                font-size: 20px; 
+                padding-top: 8px;
+                text-shadow: black 0.1em 0.1em 0.2em;
+                margin-block: 10px;
+            }
+            
+            .icons-pagamento{
+                font-size: 32px;
+                color: white;
+                text-shadow: black 0.1em 0.1em 0.2em;
+            }
+
+            footer h5{ /* texto na area de copyright*/
+                text-align: center;
+                color: white;
+                text-shadow: black 0.1em 0.1em 0.2em;
+                margin-top: 40px;
+                margin-bottom: 10px;
+            }
+
+            .icons-redes-sociais{
+                font-size: 30px;
+                display: flex;
+                align-items: center;
+                color: white;
+                text-shadow: black 0.1em 0.1em 0.2em;
+            }
+
+            .contato-footer, .loja-footer, .suporte-footer {
+                width: 32%;
+                display: inline-block;
+            }
+
+            /*Estilizando links, palavras abaixo de contato, loja e suporte*/
+            footer a:link {
+                text-decoration: none;
+                color: white;
+                text-shadow: black 0.1em 0.1em 0.2em;
+                margin-block: 50px;
+              }
+              a:visited {
+                text-decoration: none;
+                color: white;
+              }
+              
+              a:hover {
+                text-decoration: underline;
+                color: white;
+              }
+
+            a:active{
+                text-decoration: underline;
+                color: white;
+            }
