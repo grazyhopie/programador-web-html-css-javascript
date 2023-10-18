@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+	<html>
+	  	<head>
+			<meta charset="UTF-8" />
+			<title>Home</title>
+
+            <!--Icones font awesome-->
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+            <!-- Icones Google -->
+            <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+			<style>
+                * {
+                    margin: 0;
+                    padding: 0;
+                }
+
+                body {
+                    font-family: sans-serif;
+                }
+
+				header {
+					background-color: rgb(230, 230, 230);
+				}
+
+                div {
+                    border: 1px solid black;
+                    width: 20%;
+                    display: inline-block;
+                    margin-left: 5px;
+                }
+
+                /*imagem e nome*/
+                #logo {
+                    width: 5%;
+                }
+
+                /*busca e menu*/
+                fieldset {
+                    width: 100%;
+                    border: none;
+                }
+
+                input[type=search] {
+                    border-radius: 20px;
+                    height: 35px;
+                    width: 100%;
+                }
+
+                #busca_nav {
+                    width: 70%;
+                }
+
+                /*mexendo no ícone (e o placeholder involuntariamente)*/
+                .fa {
+                    font-size: 15px;
+                    padding-left: 7px;
+                }
+
+                .menu {
+                    width: 100%;
+                }
+
+
+                /* ------------------------------------ DROPDOWN MENU ------------------------------------  OBS: (2) é relativo ao fone e (3) é relativo à caixinha */
+                
+                /*Alinhando horizontalmente o dropdown com o restante dos links no menu*/
+                .dropdown, .opcoes_menu {
+                    display: inline-block;
+                    margin: 10px 15px;
+                }
+
+                /* ---------------------------------------------------------------- */
+
+                /*TAG button*/
+                .botao_dropdown, .botao_drop_2, .botao_drop_3 {
+                    border: none;
+                    width: 160px;
+                }
+
+                .botao_drop_2, .botao_drop_3 {
+                    font-size: 16px;
+                    position: absolute;
+                    left: -5.5px;
+                }
+
+                .botao_dropdown {
+                    padding: 10px;
+                    font-size: 19px;
+                    font-weight: bold;
+                    background-color: rgb(230, 230, 230);
+                }
+
+                .botao_drop_2 {
+                    top: -1px;
+                }
+
+                .botao_drop_3 {
+                    top: 40px;
+                }
+
+                /* ---------------------------------------------------------------- */
+
+                /*posicionando o conteúdo do dropdown dentro do DIV*/
+                .dropdown {
+                    position: relative;
+                    border: none;
+                }
+
+                .dropdown2, .dropdown3 {
+                    position: absolute;
+                    border: none;
+                }
+
+                /* ---------------------------------------------------------------- */
+
+                /*conteúdo do dropdown*/
+                .conteudo_dropdown, .conteudo_drop_2, .conteudo_drop_3 {
+                    display: none;
+                    position: absolute;
+                    min-width: 160px;
+                }
+
+                .conteudo_dropdown {
+                    right: -0.7px;
+                }
+
+                .conteudo_drop_2, .conteudo_drop_3 {
+                    left: 149px;
+                    background-color: rgb(240, 180, 210);
+                }
+
+                .conteudo_drop_2 {
+                    top: -2px;
+                }
+
+                .conteudo_drop_3 {
+                    top: 40px;
+                }
+
+                /* ---------------------------------------------------------------- */
+
+                /*links dentro do dropdown*/
+                .conteudo_dropdown a {
+                    color: black;
+                    padding: 12px 16px;
+                    text-decoration: none;
+                    display: block;
+                }
+
+                /* ---------------------------------------------------------------- */
+
+                /*mostrar o menu do dropdown (hover)*/
+                .dropdown:hover .conteudo_dropdown, .dropdown2:hover .conteudo_drop_2, .dropdown3:hover .conteudo_drop_3 {
+                    display: block;
+                }
+
+                /* ---------------------------------------------------------------- */
+
+                /*Login e Carrinho*/
+                #icones {
+                    width: 20%;
+                    vertical-align: top;
+                    text-align: center;
+                }
+                 
+                .user_cart {
+                    font-size: 50px;
+                    border: none;
+                } 
+
+                .mini_container {
+                    margin-inline: 20px;
+                    vertical-align: top;
+                }
+
+                .menu, #logo, #busca_nav, #icones, .mini_container {
+                    border: none;
+                }
+
+			</style>
+		  </head>
+
+		  <body>
+			<header>
+                <!--Imagem e nome do site-->
+                <div id="logo">
+                    <h6>[Inserir<br>ícone]</h6>
+                    <h5>Soul Music</h5>
+                </div>
+
+                <!--Busca e Menu-->
+                <div id="busca_nav">
+                    <form method="post">
+                        <fieldset>
+
+                            <!--Aqui eu utilizei ícones do Font Awesome-->
+                            <input type="search" name="busca" class="fa" placeholder="Buscar produtos, marcas, headsets, e outros itens... &#xf002;">        
+                            <!-- <input type="button" value="&#xf002;" class="fa fa-search" style="font-size: 16px; padding: 7px 7px 7px 0; background-color: #f7f7f8; border: none;"> -->
+                        </fieldset>
+                    </form>
+
+                    <div class="menu">
+
+                        <!--Dropdown Categorias-->
+                        <div class="dropdown">
+
+                            <!--Aqui eu utilizei ícones do Google-->
+                            <button class="botao_dropdown"> Categorias <i style="font-size: 13px; font-weight: bold;" class="material-icons">keyboard_arrow_down</i> </button>
+                            <div class="conteudo_dropdown">
+
+
+                                <!--dropdown lateral FONES-->
+                                <div class="dropdown2">
+                                    <button class="botao_drop_2"> <a href="#">Fones de Ouvido</a> </button>
+
+                                    <div class="conteudo_drop_2">
+                                        <a href="#">Bluetooth</a>
+                                        <a href="#">Com Fio</a>
+                                        <a href="#">Gamer</a>
+                                        <a href="#">Headset</a>
+                                        <a href="#">Retorno de Palco</a>
+                                    </div>
+                                </div>
+
+
+
+                                <!--dropdown lateral CAIXAS-->
+                                <div class="dropdown3">
+                                    <button class="botao_drop_3"> <a href="#">Caixas de Som</a> </button>
+
+                                    <div class="conteudo_drop_3">
+                                        <a href="#">Compacta</a>
+                                        <a href="#">Bluetooth</a>
+                                        <a href="#">Amplificadora</a>
+                                    </div>
+                                </div>
+                            </div>
+                    
+                        </div>
+
+
+                    
+                        <h3 class="opcoes_menu"> <a href="#">Ofertas</a> </h3>
+
+                        <h3 class="opcoes_menu"> <a href="#">Quem somos</a> </h3>
+
+                        <h3 class="opcoes_menu">Contato</h3>
+
+                        <h3 class="opcoes_menu">Suporte</h3>
+
+                   
+                    </div>
+                </div>
+
+                <div id="icones">
+                    <div class="mini_container">
+                        <button class="user_cart" style="width: 80%;"> <i class="material-icons" style="font-size: 40px;">person</i> </button>
+                        <h5>Entre ou<br>cadastre-se</h5>
+                    </div>
+                    
+                    <div class="mini_container">
+                        <button class="user_cart" style="width: 80%;"> <i class="fa fa-shopping-cart" style="font-size: 40px;"></i> </button>
+                    </div>
+                    
+
+
+                </div>
+
+			</header>
+
+			<footer></footer>
+		  </body>
+	</html>

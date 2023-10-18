@@ -1,0 +1,51 @@
+ 
+ /serviços ofertados imagens/
+ .container-serviços{
+         display: flex;
+         height: 20%;
+         justify-content: center;
+         align-items: center;
+         padding-left: 30px;
+ }
+
+ .child{ 
+     width: 20%;
+     height: 10px;
+     background-color: none;
+     border: none;
+     align-items: center;
+ } 
+
+ img {
+     border-radius: 50px;
+     box-shadow: 0 8px 17px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+     cursor: pointer;
+ }
+ <!--imagens dos serviços ofertados-->
+    <div class="container-serviços">
+        <div class="child">
+            <img onmouseover="imgGrande(this)" onmouseout="imgNormal(this)" alt="vitaminas e sucos" src="https://i.imgur.com/0us9CbU.jpg"width="200" height="200">
+        </div>
+        <div class="child">
+            <img onmouseover="imgGrande(this)" onmouseout="imgNormal(this)"  alt="marmitas prontas" src="https://i.imgur.com/nl11v3V.jpg"width="200" height="200">
+        </div>
+            <div class="child">
+                <img onmouseover="imgGrande(this)" onmouseout="imgNormal(this)" alt="pratos do dia" src="https://i.imgur.com/96Zjqsv.jpg"width="200" height="200">
+            </div>
+            <div class="child">
+                <img onmouseover="imgGrande(this)" onmouseout="imgNormal(this)" alt="sobremesa" src="https://i.imgur.com/WdLOU3c.jpg"width="200" height="200">
+            </div>
+    </div>
+
+<!--interação javascript-->
+    <script>
+        function imgGrande(x){
+            x.style.height = "250px"
+            x.style.width = "250px"
+        }
+
+        function imgNormal(x){
+            x.style.height = "200px"
+            x.style.width = "200px"
+        }
+    </script>
