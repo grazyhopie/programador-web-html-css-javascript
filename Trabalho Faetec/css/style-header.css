@@ -1,0 +1,113 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: sans-serif;
+}
+.icone-logotipo-header{
+    position: absolute; /*define a posição exata da logo na page*/
+    display: block;
+    margin-top: 20px;
+    padding-left: 21px;
+}
+
+.icone-logotipo-header h1{ /* titulo da logotipo: Soul Music*/
+    color: white;
+    font-size: 28px;
+}
+
+.icone-logotipo-header i{
+    font-size: 30px;
+    color: white;
+    padding-left: 35%;
+}
+
+/*Trocar as cores depois*/
+header {
+    background-color: #F4B2FF;
+    height: 200px;
+}
+
+/*busca e menu*/
+fieldset {
+    width: 100%;
+    border: none;
+}
+
+/*campo de pesquisa*/
+input[type=search] {
+    border-radius: 20px;
+    height: 35px;
+    width: 100%;
+    text-align: center;
+}
+
+/*campo de busca e menu*/
+#busca_nav {
+    width: 60%;
+    padding-left: 200px;
+    text-align: center;
+}
+
+/*mexendo no ícone da barra de pesquisa (e as letrinhas do placeholder involuntariamente)*/
+.fa {
+    font-size: 15px;
+    padding-left: 7px;
+}
+
+ul {
+    list-style-type: none;
+    text-align: center;
+}
+
+li, .linkmenu /*OBS: .linkmenu é a tag <a>*/ {
+    display: inline-block;
+    margin-top: 10px;
+    font-size: 18px;
+    padding-left: 14px;
+}
+
+li {
+    padding: 10px;
+}
+
+/*mexendo no último <li>*/
+li:last-of-type {
+    margin-right: 0;
+}
+
+/*mantendo todos os <li> da mesma cor, independente do que aconteça*/
+.linkmenu, .linkmenu:visited, li {
+    color: rgb(24, 22, 22);
+}
+
+/*trocar a cor*/
+li:hover {
+    background-color: rgb(51, 51, 51);
+    color: #f7f7f8;
+    padding: 10px;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+
+/*Cadastre-se, Login e Carrinho*/
+#icones /*é o <div> maior*/ {
+    width: 20%;
+    text-align: center;
+    padding-left: 77%;
+}
+
+/*blocos de cada ícone*/
+.mini_container {
+    display: inline-block;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+.link-botao, .link-botao:visited {
+    text-decoration: none;
+    color: black;
+}

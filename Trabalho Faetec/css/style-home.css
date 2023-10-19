@@ -1,0 +1,221 @@
+/*home*/
+@charset "UTF-8";
+*{
+    margin: 0;
+    padding: 0;
+}
+            
+body{
+    font-family: 'Raleway', sans-serif;
+}
+
+/*Imagem abaixo do header/barra de navegação*/
+            .frase-main{
+                padding: 83px;
+                width: 1000px;
+                height: 350px;
+                padding-left: 180px;
+                border: none;
+                background-image: url(https://images.unsplash.com/photo-1593121925328-369cc8459c08?auto=format&fit=crop&q=80&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&w=2070);
+                background-repeat: repeat;
+                background-size: 100% 100%;
+            }
+
+            /*container geral para o botao explorar produtos*/
+            .button-geral{
+                border: none;
+                text-decoration: none;
+                cursor: pointer;
+            }
+
+            /*Botão de explorar produtos, abaixo do header*/
+            .explorar-btn{
+                background: linear-gradient(90deg, #f0caf5 0%, #e21fd8 80%);
+                color: white;
+                text-shadow: black 0.1em 0.1em 0.3em;
+                border-style: none;
+                font-weight: bold;
+                outline: none;
+                padding: 10px 20px;
+                border-radius: 5px;
+                box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+                margin-block: 30px;
+            }
+
+                .explorar-btn:hover{
+                    background: linear-gradient(90deg, #e55df7 0%, #dd0ad3 90%);
+                }
+
+                .explorar-btn:active{
+                    background: linear-gradient(90deg, #dc3bf1 0%, #680263 90%);
+                }
+                /* titulos: itens mais buscados e beneficios que oferecemos*/
+                .titulo-destaque{
+                            text-align: center;
+                            margin-block: 30px;
+                        }
+
+                /*Container com os produtos mais acessados*/
+                .produto-01 .produto-02 .produto-03{
+                    display: inline-block;
+                    align-items: center;
+                }
+
+                /*texto promocional: fones wireless, abaixo dos itens mais buscados*/
+                .conteudo-secundario{
+                    display: flex;
+                    height: 70%;
+                    justify-content: center;
+                    margin-block: 50px;
+                    background-color: #f0caf5;
+                    margin-block: 100px;
+                }
+
+                .mini-conteiner-segundario{
+                        width: 80%;
+                        height: 700px;
+                        background-color: none;
+                        font-family: 'Nunito', sans-serif;
+                        text-align: left;
+                }
+
+                .conteudo-secundario img{
+                    box-shadow: 0 8px 17px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+                    cursor: pointer;
+                    width: 50%;
+                    height: 60%;
+                    margin-top: 40px;
+                }
+                /*container geral compre agora*/
+                .container-compre-agora{
+                        border: none;
+                        text-decoration: none;
+                        cursor: pointer;
+                    }
+                    
+                    /*Botão Compre Agora*/
+                    .compre-agora-btn{
+                        background-color: #7444FB;
+                        color: white;
+                        border: none;
+                        font-weight: bold;
+                        text-shadow: black 0.1em 0.1em 0.3em;
+                        font-size: 20px;
+                        outline: none;
+                        padding: 10px 22px;
+                        border-radius: 5px;
+                        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+                    }
+
+                    .compre-agora-btn:hover{
+                        background-color: #5920f8;
+                    }
+
+                    .compre-agora-btn:active{
+                        background-color: #360caa;
+                    }
+
+                    .beneficio-frete-gratis, .beneficio-seguranca, .beneficio-forma-de-pagar{
+                        margin-block: 20px;
+                        width: 30%;
+                    }
+
+                    /* ajustando tamanho dos icones: beneficios que oferecemos*/
+                    .beneficio-frete-gratis i{
+                        font-size: 80px;
+                    }
+
+                    .beneficio-seguranca i{
+                        font-size: 80px;
+                    }
+
+                    .beneficio-forma-de-pagar i{
+                        font-size: 80px;
+                    }
+
+                    /*produtos mais buscados*/
+                        .container-produtos{
+                                display: flex;
+                                height: 20%;
+                                justify-content: center;
+                                padding-left: 30px;
+                        }
+
+                        .child{ 
+                            width: 20%;
+                            height: 380px;
+                            background-color: none;
+                            align-items: center;
+                            padding-left: 40px;
+                            font-family: 'Nunito', sans-serif;
+                            text-align: center;
+                        }
+
+                        .child h3{
+                            color: rgb(6, 153, 37);
+                        }
+
+                        .container-produtos img {
+                            border-radius: 30px;
+                            box-shadow: 0 8px 17px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+                            cursor: pointer;
+                            width: 200px; 
+                            height: 200px;
+                        }
+                        /*container geral do botão compre agora*/
+                        .container-compre-agora{
+                            border: none;
+                            padding: 10px;
+                            text-decoration: none;
+                            cursor: pointer;
+                        }
+                        
+                        /*Botão Compre Agora*/
+                        .compre-agora-btn{
+                            background-color: #7444FB;
+                            color: white;
+                            border: none;
+                            font-weight: bold;
+                            text-shadow: black 0.1em 0.1em 0.3em;
+                            font-size: 13px;
+                            outline: none;
+                            padding: 10px 40px;
+                            border-radius: 5px;
+                            box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+                            margin-block: 10px;
+                        }
+
+                        .compre-agora-btn:hover{
+                            background-color: #5920f8;
+                        }
+
+                        .compre-agora-btn:active{
+                            background-color: #360caa;
+                        }
+                        /*container geral: beneficios que oferecemos(alinhando)*/
+                        .container-beneficios{
+                            display: flex;
+                            height: 20%;
+                            justify-content: center;
+                            padding-left: 30px;
+                        }
+
+                        .child2{
+                            width: 25%;
+                            height: 380px;
+                            background-color: none;
+                            align-items: center;
+                            padding-left: 40px;
+                            text-align: center;
+                        }
+
+                        /*linha vertical para separar os beneficios*/
+                        .vetical-line{
+                            border-left: 1px solid rgb(99, 99, 99);
+                            height: 100px;
+                        }
+                        
+                        /*ajustando o tamanho dos icones*/
+                        .container-beneficios i{
+                            font-size: 70px;
+                        }

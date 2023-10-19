@@ -1,0 +1,58 @@
+/*Quem somos*/
+body, html {
+        margin: 0;
+        padding: 0;
+        font-family: 'Raleway', sans-serif;
+}
+
+/*sections*/
+.historia {
+    margin-block: 100px;
+    width: 40%;
+    display: inline-block;
+    border: none;
+    background-color: rgb(228, 197, 247);
+    border-radius: 50px;
+}
+
+#agatha, #grazielly {
+        margin-inline: 40px;
+}
+
+/*avatar que iremos colocar*/
+.imagem {
+    width: 30%;
+    height: 100%;
+    vertical-align: middle;
+    text-align: center;
+}
+
+/*nossa descrição*/
+.texto {
+    width: 63%;
+    vertical-align: middle;
+    text-align: justify;
+}
+
+.imagem, .texto {
+        margin: 5px;
+        display: inline-block;
+}
+
+/*parágrafos*/
+p {
+    text-indent: 40px;
+    margin-block: 10px;
+}
+
+/*imagem topo*/
+#img-quem-somos {
+    padding: 40px 30px;
+    border: 1px solid black;
+    background-image: url(https://images.unsplash.com/photo-1504333638930-c8787321eee0?auto=format&fit=crop&q=80&w=1470&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-repeat: repeat-x;
+    background-size: 30% 100%;
+    color: white;
+    margin-top: 10px;
+    text-shadow: black 0.1em 0.1em 0.2em;
+}

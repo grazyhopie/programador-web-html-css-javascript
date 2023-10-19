@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+	<html>
+	  	<head>
+            <title>Entrar</title>
+            <!--Configura o conjunto de caracteres(acentuação)-->
+            <meta charset="utf-8" />
+            <!--Descrição da pagina-->
+            <meta name="description" content="Trabalho programador web - faetec campinho" />
+            <meta name="author" content="Agatha e Grazielly">
+            <!--Lista de palavras chaves-->
+            <meta name="keywords" content="fone,caixa-de-som,headset,wireless" />
+            <!--Ajustar a página ao dispositivo-->
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <!--Icone na guia do navegador-->
+            <link rel="icon" type="image/jpg" href="https://i.pinimg.com/originals/74/0e/17/740e17e5d8bd03425dfd82b29d103593.jpg">
+            <!--Boxicon: site de icons-->
+            <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+            <!--Icones font awesome-->
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+            <!--Google Fonts-->
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap" rel="stylesheet">
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=Bitter:ital,wght@1,900&display=swap" rel="stylesheet">           
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap" rel="stylesheet">
+            <!-- Icones Google -->
+            <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+            <!--CSS externo-->
+            <link href="css/style-footer.css" rel="stylesheet" type="text/css" />
+            <link type="text/css" rel="stylesheet" href="css/style-header.css" />
+            <link href="css/style-home.css" rel="stylesheet" type="text/css" />
+            <link href="css/style-caixa.css" rel="stylesheet" type="text/css" />
+            <link type="text/css" rel="stylesheet" href="css/style-formularios.css" />
+		</head>
+        <style>
+            #esqueci-senha {
+                text-align: left;
+            }
+        </style>
+		<body>
+            <header>
+                <!--Logotipo do site-->
+                <div class="icone-logotipo-header">
+                    <a href="#" style="text-decoration: none;">
+                        <h1>Soul Music</h1>
+                        <i class='bx bx-headphone'></i>
+                    </a>
+                </div>
+
+                <!--Botões para cadastrar, entrar e carrinho-->
+                <div id="icones">
+                    <!-- Cadastrar -->
+                    <div class="mini_container">
+                        <a class="link-botao" href="cadastro.html">
+                            <img src="https://creazilla-store.fra1.digitaloceanspaces.com/icons/3197010/person-icon-md.png" alt="Cadastro" width="35px" height="35px">
+                             <h5 class="button-imagem">Cadastre-se</h5>
+                        </a>
+                    </div>
+                    <!-- Entrar -->
+                    <div class="mini_container">
+                        <a class="link-botao" href="entrar.html">
+                            <img src="https://creazilla-store.fra1.digitaloceanspaces.com/icons/3196393/person-icon-md.png" alt="Login" width="35px" height="35px">
+                            <h5 class="button-imagem">Entrar</h5>
+                        </a>
+                    </div>
+                    <!-- Carrinho -->
+                    <div class="mini_container">
+                        <a class="link-botao" href="#">
+                            <img src="https://cdn-icons-png.flaticon.com/512/25/25619.png" 
+                            alt="Carrinho" width="35px" height="35px">
+                            <h5 class="button-imagem">Carrinho</h5>
+                        </a>
+                    </div>
+                </div>
+
+                <div id="busca_nav">
+                    <!--Barrinha de pesquisar itens-->
+                    <form method="post">
+                        <fieldset>
+                            <!--Aqui eu utilizei ícones do Font Awesome-->
+                            <input type="search" name="busca" class="fa" placeholder="&#xf002;  Buscar produtos, marcas, headsets, e outros itens... ">        
+                        </fieldset>
+                    </form>
+                    <!--section de navegação-->
+                    <nav>
+                        <ul>
+                            <a class="linkmenu" href="fone-de-ouvido.html"><li>Fone de Ouvido</li></a>
+                            <a class="linkmenu" href="caixa-de-som.html"><li>Caixa de Som</li></a>
+                            <a class="linkmenu" href="#"><li>Ofertas</li></a>
+                            <a class="linkmenu" href="quem-somos.html"><li>Quem Somos</li></a>
+                            <li>Contato</li>
+                            <li>Suporte</li>
+                        </ul>
+                    </nav> 
+            </div>
+			</header> <!--Fim do cabeçalho-->
+
+            <!--Conteúdo para as abas-->
+            <div id="entrar" class="conteudo-aba">
+                <form method="post">
+                    <fieldset>
+
+                        <!--título do formulário-->
+                        <h1 class="titulo-form">Entrar</h1>
+
+                        <!--email-->
+                        <label for="email">E-mail:</label>
+                        <br>
+                        <input type="email" name="email" placeholder="Ex:exemplo@email.com" required>
+
+                        <br>
+
+                        <!--senha-->
+                        <label for="senha">Senha:</label>
+                        <br>
+                        <input type="password" name="senha" placeholder="Insira uma senha contendo letras e números" required>
+
+                        <br>
+
+                        <!--esqueci minha senha-->
+                        <a href="recuperar-senha.html"> <h5 id="esqueci-senha">Esqueci minha senha</h5> </a>
+
+                        <!--manter conectado-->
+                        <input type="checkbox" name="conectado">
+                        <label for="conectado" class="checkbox-label">Manter-me conectado(a)</label>
+
+                        <br>
+
+                        <!-- botao entrar -->
+                        <input type="submit" value="Entrar">
+
+                        <!-- linha divisao -->
+                        <hr class="divisao-form">
+
+                        <!-- opcao login -->
+                        <h3 class="opcao-login">Ou faça login com</h3>
+
+                        <!-- botao facebook -->
+                        <button type="button" class="facebook">
+                            <a class="link-botao" target="_blank" href="https://www.facebook.com/">  
+                                <i style="font-size: 15px; margin-right: 5px; color: #4267B2;" class="fa">&#xf230;</i>Facebook
+                            </a>
+                        </button>
+
+                        <!-- botao google -->
+                        <button type="button" class="google"> 
+                            <a class="link-botao" target="_blank" href="https://accounts.google.com/v3/signin/identifier?continue=https%3A%2F%2Fwww.google.com%2F&ec=GAZAmgQ&hl=pt-BR&ifkv=AVQVeyw3sK5qcp4s5Ge2CvSrfmS4KSsaj2uq0-1NbF2a6aMst6wswA95cv6LA1mLjEPygKYDG1opiQ&passive=true&flowName=GlifWebSignIn&flowEntry=ServiceLogin&dsh=S-1643289074%3A1697406646605843&theme=glif">
+                                <i style="font-size: 15px; margin-right: 5px; color: green;" class="fa">&#xf1a0;</i>  Google
+                            </a>
+                        </button>
+
+                        <h5 class="entrar-cadastrar">Ainda não possui cadastro? <a href="cadastro.html">Clique aqui</a>!</h5>
+
+                    </fieldset>
+                </form>
+            </div>
+
+			<!--Rodapé-->
+            <footer>
+				<div class="icone-logotipo">
+                    <a href="#">
+                        <h1>Soul Music</h1>
+                    </a>
+                </div>
+                <br />
+				<h2>Formas de Pagamento</h2>
+				<div class="icons-pagamento">
+						<i class='bx bxs-credit-card-alt' ></i>
+						<i class='bx bxl-visa'></i>
+						<i class='bx bxl-mastercard'></i>
+						<i class='bx bxl-paypal'></i>
+				</div>
+                <div class="contato-footer">
+                    <h2>Contato</h2>
+                    <a href="#">(21)983577723</a><br /><br />
+                    <a href="mailto:atendimentosoulmusic@gmail.com">atendimentosoulmusic@gmail.com</a><br /><br />
+                    <a href="#">Rio de Janeiro, CEP 27898-807</a><br /><br />
+                </div>
+
+                <div class="loja-footer">
+                    <h2>Loja</h2>
+                    <a href="quem-somos.html">Sobre Nós</a><br /><br />
+                    <a href="#">Serviços</a><br /><br />
+                    <a href="#">Fornecedores</a>
+                </div>
+
+                <div class="suporte-footer">
+                    <h2>Suporte</h2>
+                    <a href="termos.html">Termos e condições</a><br /><br />
+                    <a href="#">Política de Privacidade</a><br /><br />
+                    <a href="faq.html">FAQ</a><br /><br />
+                    <a href="#">Ajuda</a>
+                </div>
+                <br />
+                <br />
+				<h5>
+					<i class='bx bx-copyright'></i>
+					2023 Soul Music | Todos os direitos reservados de Agatha e Grazielly. FAETEC CAMPINHO.
+                </h5>
+				<br>
+            </footer>
+		  </body>
+	</html>

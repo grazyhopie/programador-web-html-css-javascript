@@ -1,0 +1,142 @@
+/*------------------------ Padrão para os 3 ----------------------------------*/
+@charset "UTF-8";
+*{
+    margin: 0;
+    padding: 0;
+}
+
+#cadastro, form, fieldset {
+    width: 400px;
+    margin: auto;
+    padding: 30px;
+}
+
+#cadastro, fieldset {
+    background-color: rgb(226, 226, 233);
+    border-color: rgb(207, 207, 207);
+    border-radius: 15px;
+}
+
+label {
+    font-weight: bold;
+}
+
+.titulo-form, .opcao-login, .entrar-cadastrar, h2, h5, figure {
+    text-align: center; 
+}
+
+ input {
+    margin: 5px 0px 15px 0px;
+    padding: 4px;
+    width: 585px;
+}
+
+::placeholder {
+    color: rgb(148, 5, 141);
+}
+
+input[type=submit] {
+    width: 100%;
+    height: 35px;
+    font-size: 15px;
+    background-color: rgb(98, 98, 121);
+    color: #f7f7f8;
+    border: none;
+    border-radius: 5px;
+}
+
+input[type=submit], .facebook, .google {
+    cursor: pointer;
+}
+
+/*--------------------------- Cadastro e Entrar -------------------------------*/
+.divisao-form {
+    border: 1px solid rgb(173, 173, 173);
+    margin-block: 20px;
+}
+
+.checkbox-label {
+    font-weight: lighter;
+}
+
+input[type=checkbox] {
+    margin-block: 15px;
+    width: auto;
+}
+
+a {
+    color: rgb(126, 120, 160);
+}
+
+.opcao-login {
+    margin-bottom: 15px;
+}
+
+.facebook, .google {
+    width: 210px;
+    padding-block: 7px;
+    margin-inline: 40px;
+    border-style: groove;
+}
+
+.facebook {
+    border-color: #4267B2; /*famoso azul facebook*/
+}
+
+.google {
+    border-color: green;
+}
+
+.link-botao {
+    text-decoration: none;
+    color: black;
+}
+
+.entrar-cadastrar {
+    margin-top: 20px;
+}
+
+/*----------------------------- Apenas Cadastro -----------------------------*/
+.obrigatorio {
+    color: rgb(255, 0, 0);
+    font-size: large;
+}
+
+#data-nasc {
+    width: 20%;
+}
+
+#cpf {
+    width: 190px;
+}
+
+label[for=cpf] {
+    margin-left: 20px;
+}
+
+/*Link para aba "entrar"*/
+#entrar {
+    margin-top: 20px;
+    font-size: 15px;
+}
+
+/*Apenas Entrar ----------------------------------------------------------*/
+#cadastro {
+    margin-top: 20px;
+    font-size: 15px;
+}
+
+/*Apenas Recuperar senha ----------------------------------------------------------*/
+.titulo-recuperar {
+    font-size: 40px;
+}
+
+h2 {
+    margin-block: 30px;
+    font-size: 18px;
+    color: rgb(66, 66, 66);
+}
+
+#continuar {
+    margin: 20px 0px 5px 0px;
+}
