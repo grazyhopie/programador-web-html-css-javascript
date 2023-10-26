@@ -9,4 +9,5 @@
  → Aula 6: Tipos de estilo, interno, exteno e inline.
  → Aula 7: Como declarar ID e classes, função var, sombra, imagem no background.
  → Aula 19: Como mostrar o calculo do subtotal em um formulário com Javascript.
+ → Aula 22: Como mostrar perguntas: window.prompt, window.alert, parseInt, parseFloat, function.
 ```
