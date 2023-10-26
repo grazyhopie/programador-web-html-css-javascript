@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <!--executar arquivo no navegador: F5 -->
+    <!--Inicio do cabeçalho-->
+	<head>
+        <meta charset="utf-8"> <!--Acentuação-->
+	     <title>Aula 22 - exemplo 01</title>
+         <script>
+            function calcular()
+            {
+                //Soliicitar nome do produto, quantidade e preço. Calcular o total e exibir
+                var nome_produto = window.prompt('Digite o nome do produto');
+                var qtd = parseInt(window.prompt('Digite a quantidade de itens')); //valores numericos não colocar entre aspas
+                var preco = parseFloat(window.prompt('Digite o preço unitário'));
+                var total = qnt * preco;
+
+                //exibindo os dados
+                //window.alert('texto que aparece na pagina: ' + nome_da_variavel + ...);
+                //nome_variavel.toFixed(qtd de casas decimais) usado somente com numeros para fixar qtd das casas decimais
+                window.alert('Produto: '+ nome_produto + '\nQuantidade: ' + qtd + '\nPreço: ' + preco.toFixed(2) + '\nTotal' + total.toFixed(2));
+            }
+         </script>
+	</head>
+            <!--Inicio do corpo da página(conteúdo)-->
+            <body>
+                <h1>Cadastro de Produtos</h1>
+                <!--Ao clicar no botão, executar a função calcular()-->
+                <button onclick="calcular();">Pagar em dinheiro</button>
+            </body>
+</html>
