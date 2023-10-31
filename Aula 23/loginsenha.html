@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<!--executar arquivo no navegador: F5 -->
+        <meta charset="utf-8">
+	     <title>
+	      Aula 23 - Exemplo 05
+	     </title>
+         <script>
+            function validar(){
+                //entrada de dados(receber o login e a senha form)
+                var login = document.formlogin.login.value;
+                var senha = document.formlogin.senha.value;
+
+                //processamento
+                if(login == 'exemplo@gmail.com' && senha == 1234)
+                {
+                    window.alert('Dados confirmados');
+                    //abre uma nova guia(link externo)
+                    window.open('https://youtube.com', 'Cadastramento',
+                    'top=400, left=400, width=500, height=500'); //posição e tamanho
+                }
+                else
+                {
+                    window.alert('Dados inválidos. Redigite');
+                }
+            }
+        </script>
+	</head>
+            <body>
+                <form name="formlogin">
+                    <label for="login">Login:</label><br>
+                    <input type="text" name="login"><br>
+
+                    <label for="senha">Senha:</label><br>
+                    <input type="password" name="senha"><br><br>
+
+                    <input type="submit" value="Entrar" onclick="validar();">
+                </form>
+            </body>
+</html>
