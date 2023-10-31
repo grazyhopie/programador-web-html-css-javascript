@@ -1,0 +1,28 @@
+<!--Digitar o ano e mostrar se ele é bissexto ou não-->
+<!DOCTYPE html>
+<html>
+	<head>
+	<!--executar arquivo no navegador: F5 -->
+        <meta charset="utf-8">
+	     <title>
+	      Aula 23 - Exemplo 03
+	     </title>
+	</head>
+            <body>
+                <script>
+                    //entrada de dados
+                    var ano = window.prompt('Digite um ano D.C: ');
+                    //estrutura de decisão if
+                    if(ano < 0) // se o ano for menor que 0
+                        var msg = 'Digite um ano D.C';
+                    else // senão 
+                        if((ano % 4 == 0) && (ano % 100 != 0));
+                            var msg = ano + 'É bissexto';
+                        else
+                            var msg = ano + 'não é bissexto';
+                    //saida de dados
+                    //exibir mensagem
+                    document.write('<h3>:' + msg + '</h3>');
+                </script>
+            </body>
+</html>,0

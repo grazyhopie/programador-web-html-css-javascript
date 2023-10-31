@@ -1,0 +1,28 @@
+<!--Digitar idade, mostrar o ano em que nasceu
+e exibir se pode votar ou não-->
+<!DOCTYPE html>
+<html>
+	<head>
+	<!--executar arquivo no navegador: F5 -->
+        <meta charset="utf-8">
+	     <title>
+	      Aula 23 - Exemplo 02
+	     </title>
+	</head>
+            <body>
+                <script>
+                    //entrada de dados
+                    var idade = window.prompt('Digite sua idade: ');
+                    //estrutura de decisão if
+                    if(idade >= 16) // se a idade for maior ou igual a 16(true)
+                        var msg = 'Pode votar';
+                    else // senão (falsa)
+                        var msg = 'Não pode votar';
+                    //calculando o ano de nascimento
+                    var ano = (2023 - idade);
+                    //saida de dados
+                    //exibir mensagem
+                    document.write('<h4>Ano de Nascimento:' + ano + '</h4>');
+                </script>
+            </body>
+</html>,0
