@@ -1,0 +1,38 @@
+fieldset
+{
+    width: 53%;
+    height: 220px;
+    padding-left: 25px;
+    background-color: rgb(198, 221, 245);
+    border: none;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    border-radius: 20px;
+}
+
+input 
+{
+    margin: 9px;
+    padding: 3px;
+    width: 120px;
+    height: 25px;
+    border: none;
+    border-radius: 7px;
+    text-align: center;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+.botoes
+{
+    background-color: #f57c58;
+}
+
+.botoes:hover
+{
+    background-color: #f4511e;
+}
+
+.campotxt
+{
+    padding-left: 20px;
+    margin-left: 20px;
+}

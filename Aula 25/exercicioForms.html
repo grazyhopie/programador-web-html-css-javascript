@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<!--executar arquivo no navegador: F5 -->
+    <meta charset="utf-8">
+	<title>exercicio</title>
+    <!--CSS externo-->
+    <link href="css/mystyle.css" rel="stylesheet" type="text/css" />
+	</head>
+        <body>
+            <script>
+                //estoque de produto
+                var lista = new Array();
+
+                function incluir()
+                {
+                    //ler todos os campos do formulario
+                    var codigo = document.formestoque.txtcodigo.value;
+                    var descricao = document.formestoque.txtdescricao.value;
+                    var preco = document.formestoque.txtpreco.value;
+                    //window.alert(codigo + '\n' + descricao + '\n' + preco);
+
+                    //guardar(armazenar os itens) no objeto produto
+                    var produto = { "codigo":codigo, "descricao":descricao, "preco":preco};
+
+                    //guardar objeto na lista
+                    lista.push(produto);
+                    document.formestoque.reset(); //zerar campos do formulario
+                    window.alert('Produto cadastrado');
+                }
+
+                function alterar()
+                {
+
+                }
+
+                function excluir()
+                {
+
+                }
+
+                function consultar()
+                {
+
+                }
+            </script>
+
+            <form name="formestoque">
+                <fieldset><legend>Estoque de Produtos</legend>
+                        <label>Código</label>
+                        <input class="campotxt" type="number" name="txtcodigo" 
+                        required>
+                        <br />
+                        <label>Descrição</label>
+                        <input class="campotxt" type="text" name="txtdescricao" required>
+                        <br />
+                        <label>Preço unitário</label>
+                        <input class="campotxt" type="number" value="0.50" value="0.01" step="0.01" name="txtpreco" required>
+                        <br />
+
+                        <input class="botoes" type="submit" value="incluir" onclick="incluir();">
+                        <input class="botoes" type="submit" value="alterar" onclick="alterar();">
+                        <input class="botoes" type="submit" value="excluir" onclick="excluir();">
+                        <input class="botoes" type="submit" value="consultar" onclick="consultar();">
+                        <input type="button" value="salvar" onclick="salvar();">
+                    </fieldset>
+                </form>
+        </body>
+</html>
