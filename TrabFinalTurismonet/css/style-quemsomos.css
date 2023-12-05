@@ -1,0 +1,25 @@
+/*avatar que iremos colocar*/
+.imagem {
+    width: 20%;
+    height: 50%;
+    vertical-align: middle;
+    text-align: center;
+}
+
+/*nossa descrição*/
+.texto {
+    width: 63%;
+    vertical-align: middle;
+    text-align: justify;
+}
+
+.imagem, .texto {
+        margin: 5px;
+        display: inline-block;
+}
+
+/*parágrafos*/
+p {
+    text-indent: 40px;
+    margin-block: 10px;
+}
