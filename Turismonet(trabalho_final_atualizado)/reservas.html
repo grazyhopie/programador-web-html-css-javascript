@@ -32,6 +32,10 @@
         form
         {
             margin-block: 20px;
+            text-align: center;
+            background-color: azure;
+            border-radius: 20px;
+            padding: 17px;
         }
         </style>
 	</head>
@@ -53,50 +57,61 @@
                 </div>
                 <div class="main">
                     <h1>Reserva de passagens</h1>
-                    <h2>Dados do usuário:exemplo@gmail.com</h2>
                     <form>
                         <label for="nome">Nome:</label>
                         <input type="text" id="nome" name="nome" required>
+                        <br><br>
                 
                         <label for="cpf">CPF:</label>
                         <input type="number" id="cpf" name="cpf" required>
+                        <br><br>
                 
                         <label for="rg">RG:</label>
                         <input type="number" id="rg" name="rg" required>
+                        <br><br>
                 
                         <label for="passaporte">Passaporte:</label>
                         <input type="text" id="passaporte" name="passaporte" required>
+                        <br><br>
                 
                         <label for="dataNascimento">Data de Nascimento:</label>
                         <input type="date" id="dataNascimento" name="dataNascimento" required>
+                        <br><br>
                         
                         <label for="nacionalidade">nacionalidade:</label>
                         <select id="nacionalidade" name="nacionalidade">
                             <option value="brasileiro">Brasileiro</option>
                             <option value="Estrangeiro">Estrangeiro</option>
                         </select>
+                        <br><br>
                         
                         <label for="destino">Destino:</label>
                         <input type="text" id="destino" name="destino" required>
-                        
+                        <br><br>
+                        <label>Roteiro:</label>
                         <label>
                             <input type="radio" name="roteiro" value="roteiro">
                             Aéreo
                         </label>
+
                         <label>
                             <input type="radio" name="roteiro" value="roteiro">
                             Rodoviário
                         </label>
-
+                        <br><br>
                         <label for="dataSaida">Data de Saída:</label>
                         <input type="date" id="dataSaida" name="dataSaida" required>
+                        <br><br>
                 
                         <label for="numeroCompanhia">Número da Companhia:</label>
                         <input type="number" id="numeroCompanhia" name="numeroCompanhia" required>
+                        <br><br>
                 
                         <button type="submit">Confirmar Reserva</button>
                     </form>
                 </div>
+
+                <a class="voltar-btn" href="index.html"><i class="fa-solid fa-arrow-left"></i>Voltar</a>
                 <!--Rodapé--> 
                 <footer>
                     <h4> &copy; 2023 Turismonet. Todos os direitos reservados de Grazielly.</h4>
