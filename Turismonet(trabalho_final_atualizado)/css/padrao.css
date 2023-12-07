@@ -1,0 +1,163 @@
+@charset "UTF-8";
+
+*{ /*cores ocuparem 100% do espaçamento da página*/
+    padding: 0;
+    margin: 0;
+}
+:root{
+    --bluePrincipal: #02a9f6;
+    --verdeLimao: #cdff42;
+}
+body{
+    background-color: rgb(148, 228, 248);
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+nav
+{
+    width: 60%;
+    padding-left: 200px;
+    text-align: center;
+}
+
+/*Mechendo na lista da seção de navegação(reserve, quem somos e login)*/
+ul {
+    list-style-type: none;
+}
+
+li
+{
+    padding: 5px;
+}
+
+.linkmenu
+{
+    margin-left: 90px;
+    display: inline-block;
+    font-size: 19px;
+    padding-left: 50px;
+    padding-bottom: 40px;
+    text-decoration: none;
+}
+
+/*mantendo todos os <li> da mesma cor*/
+.linkmenu, .linkmenu:visited, li {
+    color: black;
+}
+
+/*trocar a cor*/
+li:hover {
+    background-color: rgb(26, 214, 9);
+    color: #f7f7f8;
+    padding: 10px;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+/*container geral: informações adicinais, contato, serviços(alinhando)*/
+.container-info{
+    display: flex;
+    height: 20%;
+    justify-content: center;
+    padding-left: 30px;
+    margin-top: 50px;
+}
+
+.child2{
+    width: 20%;
+    height: 300px;
+    background-color: none;
+    align-items: center;
+    padding-left: 45px;
+    text-align: center;
+}
+
+/*linha vertical para separar os beneficios*/
+.vetical-line{
+    border-left: 1px solid rgb(99, 99, 99);
+    height: 100px;
+    align-items: center;
+}
+
+/*ajustando o tamanho dos icones*/
+.container-info i{
+    font-size: 70px;
+}
+
+ /*container geral para o botao reservar agora*/
+ .button-geral{
+    border: none;
+    text-decoration: none;
+    cursor: pointer;
+    padding-left: 600px;
+    margin-bottom: 30px;
+}
+
+/*container geral para o botao reservar agora*/
+.botao-geral{
+    border: none;
+    text-decoration: none;
+    cursor: pointer;
+    align-items: center;
+}
+
+/*Botão de reservar agora, abaixo das informações dicionais*/
+.reserve-btn{
+    background: linear-gradient(90deg, #90c1f8 0%, #1f8ae2 80%);
+    color: white;
+    text-shadow: black 0.1em 0.1em 0.3em;
+    border-style: none;
+    font-weight: bold;
+    outline: none;
+    padding: 15px 30px;
+    border-radius: 5px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    margin-block: 30px;
+}
+
+    .reserve-btn:hover{
+        background: linear-gradient(90deg, #add3f7 0%, #4ea3f3 90%);
+    }
+
+    .reserve-btn:active{
+        background:  #0178ff;
+    }
+
+footer{
+        height: 90px;
+        padding-top: 50px;
+        background-color: var(--verdeLimao);
+        color: black;
+        text-align: center;
+}
+.logotipo-turismonet h1{
+        letter-spacing: 2px;
+        font-family: 'Lilita One', cursive;
+        font-family: 'Permanent Marker', cursive;
+        text-align: center;
+        padding-top: 30px;
+        padding-right: 1000px;
+}
+.logotipo-turismonet{
+        background-color: var(--verdeLimao);
+        padding: 10px 10px 5px 5px;
+}
+.logotipo-turismonet i{
+        padding: 5px 20px 10px 10px;
+        font-size: 30px;
+}
+
+.logotipo-turismonet a{
+    text-decoration: none;
+    color: var(--bluePrincipal);
+}
+
+.voltar-btn{
+    text-decoration: none;
+    font-size: 30px;
+}
+
+.voltar-btn, i{
+    padding: 20px;
+}

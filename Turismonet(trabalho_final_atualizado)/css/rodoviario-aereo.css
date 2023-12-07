@@ -1,0 +1,21 @@
+/* configurações para página rodoviarios e aereos*/
+.main{
+    padding: 1px 60px;
+    text-align: center;
+}
+.main h1{
+    padding-block: 40px;
+}
+.link-voltar{
+    font-size: 20px;
+    margin-block: 50px;
+}
+figure{
+   padding-block: 30px;
+}
+.main figcaption{
+    text-align: center;
+}
+.main table{
+    margin-left: 20%;
+}
