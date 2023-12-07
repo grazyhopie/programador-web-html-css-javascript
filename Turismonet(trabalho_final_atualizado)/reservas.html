@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+	<head>
+        <title>Site da Turismonet</title>
+        <!--Configura o conjunto de caracteres(acentuação)-->
+        <meta charset="utf-8">
+         <!--Descrição da pagina-->
+         <meta name="description" content="Trabalho programador web - faetec campinho" />
+         <meta name="author" content="Grazielly">
+         <!--Lista de palavras chaves-->
+         <meta name="keywords" content="turismo,rodoviaria,aviao,viagem" />
+         <!--Ajustar a página ao dispositivo-->
+         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+         <!--Boxicon: site de icons-->
+         <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+         <!--fontawesome icons-->
+         <script src="https://kit.fontawesome.com/99f7cc13db.js" crossorigin="anonymous"></script>
+         <!--Google fonts-->
+         <link rel="preconnect" href="https://fonts.googleapis.com">
+         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+         <link href="https://fonts.googleapis.com/css2?family=Lilita+One&family=Permanent+Marker&display=swap" rel="stylesheet">
+         <link rel="preconnect" href="https://fonts.googleapis.com">
+         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+         <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+         <!--Icone na guia do navegador-->
+         <link rel="icon" type="image/jpg" href="https://icon-library.com/images/airplane-png-icon/airplane-png-icon-28.jpg">
+         <!--LINK PARA CSS EXTERNO-->
+         <link rel="stylesheet" href="css/padrao.css" type="text/css" />
+         <link rel="stylesheet" href="css/rodoviario-aereo.css" type="text/css" />
+        <style>
+        /*CSS interno*/
+        form
+        {
+            margin-block: 20px;
+        }
+        </style>
+	</head>
+            <body>
+                <div class="logotipo-turismonet">
+                    <h1>
+                        <a href="index.html">
+                            TURISMONET<i class="fa fa-plane"></i>
+                        </a>
+                    </h1>
+                    <!--section de navegação-->
+                <nav>
+                    <ul>
+                        <a class="linkmenu" href="servicos.html"><li>Reserve</li></a>
+                        <a class="linkmenu" href="quemsomos.html"><li>Quem Somos</li></a>
+                        <a class="linkmenu" href="login.html"><li>Login</li></a>
+                    </ul>
+                </nav>
+                </div>
+                <div class="main">
+                    <h1>Reserva de passagens</h1>
+                    <h2>Dados do usuário:exemplo@gmail.com</h2>
+                    <form>
+                        <label for="nome">Nome:</label>
+                        <input type="text" id="nome" name="nome" required>
+                
+                        <label for="cpf">CPF:</label>
+                        <input type="number" id="cpf" name="cpf" required>
+                
+                        <label for="rg">RG:</label>
+                        <input type="number" id="rg" name="rg" required>
+                
+                        <label for="passaporte">Passaporte:</label>
+                        <input type="text" id="passaporte" name="passaporte" required>
+                
+                        <label for="dataNascimento">Data de Nascimento:</label>
+                        <input type="date" id="dataNascimento" name="dataNascimento" required>
+                        
+                        <label for="nacionalidade">nacionalidade:</label>
+                        <select id="nacionalidade" name="nacionalidade">
+                            <option value="brasileiro">Brasileiro</option>
+                            <option value="Estrangeiro">Estrangeiro</option>
+                        </select>
+                        
+                        <label for="destino">Destino:</label>
+                        <input type="text" id="destino" name="destino" required>
+                        
+                        <label>
+                            <input type="radio" name="roteiro" value="roteiro">
+                            Aéreo
+                        </label>
+                        <label>
+                            <input type="radio" name="roteiro" value="roteiro">
+                            Rodoviário
+                        </label>
+
+                        <label for="dataSaida">Data de Saída:</label>
+                        <input type="date" id="dataSaida" name="dataSaida" required>
+                
+                        <label for="numeroCompanhia">Número da Companhia:</label>
+                        <input type="number" id="numeroCompanhia" name="numeroCompanhia" required>
+                
+                        <button type="submit">Confirmar Reserva</button>
+                    </form>
+                </div>
+                <!--Rodapé--> 
+                <footer>
+                    <h4> &copy; 2023 Turismonet. Todos os direitos reservados de Grazielly.</h4>
+                </footer>
+            </body>
+</html>
