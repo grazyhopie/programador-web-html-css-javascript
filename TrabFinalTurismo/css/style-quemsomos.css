@@ -1,0 +1,16 @@
+.child {
+    width: 30%;
+    height: 50%;
+    text-align: center;
+    padding-left: 400px;
+    margin-block: 40px;
+    margin-left: 30px;
+}
+
+p{
+    background-color: azure;
+    text-align: center;
+    border-radius: 20px;
+    margin-block: 20px;
+    font-size: 20px;
+}
